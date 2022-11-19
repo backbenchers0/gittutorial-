@@ -1,1 +1,63 @@
-vdsgsdgSD
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (21/21), 7.57 KiB | 3.79 MiB/s, done.
+Total 21 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/backbenchers0/gittutorial-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    tensorflow
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        this.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git add .
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    tensorflow
+        new file:   this.txt
+
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git commit -m "update to github"
+[master df24d1a] update to github
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 160000 tensorflow
+ create mode 100644 this.txt
+
+dell@DESKTOP-9NVHK1P MINGW64 ~/Desktop/GIT (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/backbenchers0/gittutorial-.git
+   a760cdb..df24d1a  master -> master
+branch 'master' set up to track 'origin/master'.
